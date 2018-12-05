@@ -87,17 +87,18 @@ cp $MINIONSRC/Minion*otf otf/
 
 ## Copy the pfb files to where they belong:
 mkdir -p $DEST/fonts/type1/adobe/MinionPro
-cp pfb/*.pfb $DEST/fonts/type1/adobe/MinionPro
+sudo cp pfb/*.pfb $DEST/fonts/type1/adobe/MinionPro
 
 SRC=`pwd`
 cd $DEST
-unzip $SRC/enc-2.000.zip
-unzip $SRC/metrics-base.zip
-unzip $SRC/metrics-full.zip
+sudo unzip $SRC/enc-2.000.zip
+sudo unzip $SRC/metrics-base.zip
+sudo unzip $SRC/metrics-full.zip
 cd $SRC
 
 sudo mktexlsr
 sudo updmap-sys --enable MixedMap MinionPro.map
+sudo updmap-sys
 
 ## Test:
 # $DOWNLOAD http://carlo-hamalainen.net/blog/myfiles/minionpro/minionpro-test.tex
