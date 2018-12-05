@@ -240,3 +240,16 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+convert.bat
+convert.sh
+doc/
+enc-2.000.zip
+fonts/
+metrics-base.zip
+metrics-full.zip
+mnsymbol.zip
+mnsymbol/
+otf/
+pfb/
+scripts.zip
+tex/
